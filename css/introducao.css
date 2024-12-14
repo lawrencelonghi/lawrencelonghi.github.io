@@ -12,8 +12,6 @@
   font-size: 4.5rem;
   line-height: 80px;
   margin-bottom: 30px;
-}
-.introtext {
   position: relative;
 }
 @media (width <=1000px) {
