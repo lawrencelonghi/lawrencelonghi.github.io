@@ -1,0 +1,130 @@
+.formacao-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  color: #fff;
+  position: relative;
+}
+.formacao {
+  background: #141414;
+}
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+.formacao-texto strong {
+  color: #fff;
+}
+.formacao .subtitulo {
+  color: #000000;
+  max-width: 5ch;
+}
+.faculdade-lista {
+  display: flex;
+  margin-bottom: 60px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.faculdade-lista span {
+  color: #a3a3a3;
+  font-size: 14px;
+}
+.faculdade-lista h3 {
+  color: #fff;
+  margin-bottom: 40x;
+  margin-top: 0px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.faculdade {
+  display: grid;
+  gap: 30px;
+  background: #000000;
+  padding: 20px;
+  align-items: start;
+  border-radius: 4px;
+  position: relative;
+  flex: 1;
+}
+.faculdade::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 75px;
+  left: -4px;
+}
+.cursos {
+  margin-bottom: 60px;
+}
+.formacao-extra h3 {
+  color: #8f8f8f;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+.formacao-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(/img/cursos.svg) no-repeat center center;
+  position: absolute;
+  left: -40px;
+  top: -4px;
+}
+.cursos h3::before {
+  background: url(/img/cursos.svg) no-repeat center center;
+}
+.idiomas h3::before {
+  background: url(/img/idiomas.svg) no-repeat center center;
+}
+.formacao-extra li {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.formacao-extra span {
+  color: #8f8f8f;
+}
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+.formacao-container::before {
+  position: absolute;
+  content: "";
+  width: 130px;
+  height: 100px;
+  background: url(/img/detalhe.svg) no-repeat center center;
+  display: block;
+  bottom: -50px;
+  left: 20px;
+}
+@media (width<=800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .formacao-texto {
+    font-size: 18px;
+  }
+  .formacao .subtitulo {
+    color: #fff;
+  }
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
