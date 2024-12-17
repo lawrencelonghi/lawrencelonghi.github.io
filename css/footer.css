@@ -1,0 +1,29 @@
+.rodape-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+}
+
+.rodape {
+  background: #000;
+}
+.rodape-contato {
+  font-size: 36px;
+  line-height: 40px;
+}
+.rodape-contato p {
+  margin-bottom: 15px;
+}
+.rodape-texto {
+  font-size: 24px;
+  line-height: 32px;
+  color: #ccc;
+}
+.lobo {
+  color: #8f8f8f;
+  background: #000;
+  padding: 10px 10px;
+}
